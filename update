@@ -1,0 +1,5 @@
+#!/bin/bash
+
+remoteBranch='develop'
+localBranch=$remoteBranch
+git fetch origin $remoteBranch:$localBranch
