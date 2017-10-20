@@ -1,0 +1,5 @@
+#!/bin/bash
+
+branch='develop'
+
+git rebase -i $branch
