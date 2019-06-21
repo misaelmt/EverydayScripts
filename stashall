@@ -1,3 +1,7 @@
 #!/bin/bash
 
-git add . && git stash
+if [ $# = 0 ]; then
+  git add . && git stash
+else
+  git add . && git stash save $@
+fi
