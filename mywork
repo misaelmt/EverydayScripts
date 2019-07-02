@@ -6,4 +6,4 @@ if [ $# = 1 ]; then
   since=$1
 fi
 
-git log --author="$(git config user.name)" --oneline --pretty=format:'%h%x09%an%x09%ad%x09%s' --date=short --no-merges --since=$since
+git log --author="$(git config user.email)" --oneline --pretty=format:'%h%x09%an%x09%ad%x09%s' --date=short --no-merges --since=$since
